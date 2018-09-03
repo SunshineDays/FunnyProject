@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIButton {
-    /// 更新底部黄色按钮的状态
+    /// 更新底部主题按钮的状态
     ///
     /// - Parameters:
     ///   - textFields: textField的数组

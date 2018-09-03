@@ -29,7 +29,6 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
 }
 
 extension BaseTabBarController {

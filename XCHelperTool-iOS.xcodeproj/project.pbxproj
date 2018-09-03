@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4067CE4212FDC4C009E05BE /* XCTakeOutShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4067CE3212FDC4C009E05BE /* XCTakeOutShopController.swift */; };
+		C4067CE6212FDC5C009E05BE /* XCTakeOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4067CE5212FDC5C009E05BE /* XCTakeOut.storyboard */; };
+		C4067CE8212FDE42009E05BE /* XCTakeOutShopSearchTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4067CE7212FDE42009E05BE /* XCTakeOutShopSearchTitleView.swift */; };
+		C4067CEA212FDE4A009E05BE /* XCTakeOutShopSearchTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4067CE9212FDE4A009E05BE /* XCTakeOutShopSearchTitleView.xib */; };
+		C4067CEC212FF771009E05BE /* UISearchBarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4067CEB212FF771009E05BE /* UISearchBarExt.swift */; };
 		C40CF5C320BFDC1100F53AC3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CF5C220BFDC1100F53AC3 /* BaseNavigationController.swift */; };
 		C40CF5C520BFDC2900F53AC3 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CF5C420BFDC2900F53AC3 /* BaseTabBarController.swift */; };
 		C40CF5CE20BFDC9000F53AC3 /* ShareTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CF5C920BFDC9000F53AC3 /* ShareTool.swift */; };
@@ -35,6 +40,9 @@
 		C449D92F21086CFF00584EC0 /* XCChatUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C449D92E21086CFF00584EC0 /* XCChatUpType.swift */; };
 		C44AE24B21196FEE00C0AE61 /* CoreDataEntityNameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AE24A21196FEE00C0AE61 /* CoreDataEntityNameEnum.swift */; };
 		C44AE24D211984B900C0AE61 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AE24C211984B900C0AE61 /* CustomTextView.swift */; };
+		C4556D922133FB8F00616C22 /* XCTakeOutShopSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4556D912133FB8F00616C22 /* XCTakeOutShopSearchController.swift */; };
+		C4556D942133FE7100616C22 /* XCTakeOutSearchTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4556D932133FE7100616C22 /* XCTakeOutSearchTitleView.swift */; };
+		C4556D962133FE7A00616C22 /* XCTakeOutSearchTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4556D952133FE7A00616C22 /* XCTakeOutSearchTitleView.xib */; };
 		C455F4A420F45A790047B527 /* SystemTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455F4A320F45A790047B527 /* SystemTool.swift */; };
 		C4560D1420E5C71000113514 /* XCBalance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4560D1320E5C71000113514 /* XCBalance.storyboard */; };
 		C4560D1620E5D38C00113514 /* XCInformationAreaShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4560D1520E5D38C00113514 /* XCInformationAreaShowController.swift */; };
@@ -49,6 +57,11 @@
 		C4560D3620E6275100113514 /* XCBillChartConsumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4560D3520E6275100113514 /* XCBillChartConsumeView.swift */; };
 		C456106E20D233F700E0B1D4 /* URLParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456106D20D233F700E0B1D4 /* URLParameter.swift */; };
 		C456107020D234BD00E0B1D4 /* InterfaceCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456106F20D234BD00E0B1D4 /* InterfaceCtrl.swift */; };
+		C45626932134F97100D1661D /* XCTakeOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45626922134F97100D1661D /* XCTakeOutController.swift */; };
+		C4562698213514BF00D1661D /* XCTakeOuteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4562696213514BF00D1661D /* XCTakeOuteCell.swift */; };
+		C4562699213514BF00D1661D /* XCTakeOuteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4562697213514BF00D1661D /* XCTakeOuteCell.xib */; };
+		C456269B213541C400D1661D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456269A213541C400D1661D /* UIViewExt.swift */; };
+		C4573E0D21366C7900426510 /* XCFixedHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4573E0C21366C7900426510 /* XCFixedHeaderController.swift */; };
 		C4576D8620CF786900B15D4C /* XCUserCheckIDCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4576D8520CF786900B15D4C /* XCUserCheckIDCardController.swift */; };
 		C4576D8920CFA60100B15D4C /* XCUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4576D8820CFA60100B15D4C /* XCUserInfoModel.swift */; };
 		C4576D8C20CFA65900B15D4C /* BaseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4576D8B20CFA65900B15D4C /* BaseModelProtocol.swift */; };
@@ -67,6 +80,10 @@
 		C45887E621119DC400DF57EF /* XCHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45887E521119DC400DF57EF /* XCHome.storyboard */; };
 		C45887ED2111A1C200DF57EF /* XCRemindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45887EC2111A1C200DF57EF /* XCRemindController.swift */; };
 		C45887EF2111A25C00DF57EF /* XCRemind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45887EE2111A25C00DF57EF /* XCRemind.storyboard */; };
+		C458A5AD21392473006658CC /* EmptyRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458A5AC21392473006658CC /* EmptyRequestType.swift */; };
+		C458A5AF2139507C006658CC /* ButtonClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458A5AE2139507C006658CC /* ButtonClassView.swift */; };
+		C458A5B1213950C5006658CC /* PayPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458A5B0213950C5006658CC /* PayPasswordView.swift */; };
+		C458A5B3213950E9006658CC /* TableViewFixedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458A5B2213950E9006658CC /* TableViewFixedHeaderView.swift */; };
 		C45B5956212BED7B00C1EDE7 /* UIWebViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B5955212BED7B00C1EDE7 /* UIWebViewExt.swift */; };
 		C45B5958212BF1AE00C1EDE7 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B5957212BF1AE00C1EDE7 /* BaseWebViewController.swift */; };
 		C45C5E39211A99AE001F705C /* XCCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C5E38211A99AE001F705C /* XCCircleController.swift */; };
@@ -167,6 +184,11 @@
 /* Begin PBXFileReference section */
 		1199E55A608D20E6349F55B3 /* Pods-XCHelperTool-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCHelperTool-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCHelperTool-iOS/Pods-XCHelperTool-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3A8A4B18AE52BFDF76BB5F3A /* Pods-XCHelperTool-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCHelperTool-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCHelperTool-iOS/Pods-XCHelperTool-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C4067CE3212FDC4C009E05BE /* XCTakeOutShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTakeOutShopController.swift; sourceTree = "<group>"; };
+		C4067CE5212FDC5C009E05BE /* XCTakeOut.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XCTakeOut.storyboard; sourceTree = "<group>"; };
+		C4067CE7212FDE42009E05BE /* XCTakeOutShopSearchTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTakeOutShopSearchTitleView.swift; sourceTree = "<group>"; };
+		C4067CE9212FDE4A009E05BE /* XCTakeOutShopSearchTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCTakeOutShopSearchTitleView.xib; sourceTree = "<group>"; };
+		C4067CEB212FF771009E05BE /* UISearchBarExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExt.swift; sourceTree = "<group>"; };
 		C40CF5C220BFDC1100F53AC3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		C40CF5C420BFDC2900F53AC3 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		C40CF5C920BFDC9000F53AC3 /* ShareTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareTool.swift; sourceTree = "<group>"; };
@@ -201,6 +223,9 @@
 		C44AE24521194E4B00C0AE61 /* XCChatUp+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "XCChatUp+CoreDataProperties.swift"; path = "/Users/sunshinedays/Desktop/XCHelperTool-iOS/XCHelperTool-iOS/Module/ChatUp/Model/XCChatUp+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		C44AE24A21196FEE00C0AE61 /* CoreDataEntityNameEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEntityNameEnum.swift; sourceTree = "<group>"; };
 		C44AE24C211984B900C0AE61 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		C4556D912133FB8F00616C22 /* XCTakeOutShopSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTakeOutShopSearchController.swift; sourceTree = "<group>"; };
+		C4556D932133FE7100616C22 /* XCTakeOutSearchTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTakeOutSearchTitleView.swift; sourceTree = "<group>"; };
+		C4556D952133FE7A00616C22 /* XCTakeOutSearchTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCTakeOutSearchTitleView.xib; sourceTree = "<group>"; };
 		C455F4A320F45A790047B527 /* SystemTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTool.swift; sourceTree = "<group>"; };
 		C4560D1320E5C71000113514 /* XCBalance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XCBalance.storyboard; sourceTree = "<group>"; };
 		C4560D1520E5D38C00113514 /* XCInformationAreaShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCInformationAreaShowController.swift; sourceTree = "<group>"; };
@@ -215,6 +240,11 @@
 		C4560D3520E6275100113514 /* XCBillChartConsumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCBillChartConsumeView.swift; sourceTree = "<group>"; };
 		C456106D20D233F700E0B1D4 /* URLParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameter.swift; sourceTree = "<group>"; };
 		C456106F20D234BD00E0B1D4 /* InterfaceCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceCtrl.swift; sourceTree = "<group>"; };
+		C45626922134F97100D1661D /* XCTakeOutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTakeOutController.swift; sourceTree = "<group>"; };
+		C4562696213514BF00D1661D /* XCTakeOuteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTakeOuteCell.swift; sourceTree = "<group>"; };
+		C4562697213514BF00D1661D /* XCTakeOuteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCTakeOuteCell.xib; sourceTree = "<group>"; };
+		C456269A213541C400D1661D /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		C4573E0C21366C7900426510 /* XCFixedHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCFixedHeaderController.swift; sourceTree = "<group>"; };
 		C4576D8520CF786900B15D4C /* XCUserCheckIDCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUserCheckIDCardController.swift; sourceTree = "<group>"; };
 		C4576D8820CFA60100B15D4C /* XCUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUserInfoModel.swift; sourceTree = "<group>"; };
 		C4576D8B20CFA65900B15D4C /* BaseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModelProtocol.swift; sourceTree = "<group>"; };
@@ -235,6 +265,10 @@
 		C45887E521119DC400DF57EF /* XCHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XCHome.storyboard; sourceTree = "<group>"; };
 		C45887EC2111A1C200DF57EF /* XCRemindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCRemindController.swift; sourceTree = "<group>"; };
 		C45887EE2111A25C00DF57EF /* XCRemind.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XCRemind.storyboard; sourceTree = "<group>"; };
+		C458A5AC21392473006658CC /* EmptyRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRequestType.swift; sourceTree = "<group>"; };
+		C458A5AE2139507C006658CC /* ButtonClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonClassView.swift; sourceTree = "<group>"; };
+		C458A5B0213950C5006658CC /* PayPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPasswordView.swift; sourceTree = "<group>"; };
+		C458A5B2213950E9006658CC /* TableViewFixedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFixedHeaderView.swift; sourceTree = "<group>"; };
 		C45AA841212F9FC200F5A262 /* XCHelperTool-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "XCHelperTool-iOS.entitlements"; sourceTree = "<group>"; };
 		C45B5955212BED7B00C1EDE7 /* UIWebViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewExt.swift; sourceTree = "<group>"; };
 		C45B5957212BF1AE00C1EDE7 /* BaseWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +398,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C4067CDE212FDBDF009E05BE /* TakeOut */ = {
+			isa = PBXGroup;
+			children = (
+				C4067CE2212FDC0D009E05BE /* ViewController */,
+				C4067CE1212FDC09009E05BE /* View */,
+				C4067CE0212FDC04009E05BE /* Model */,
+				C4067CDF212FDBFC009E05BE /* Handler */,
+			);
+			path = TakeOut;
+			sourceTree = "<group>";
+		};
+		C4067CDF212FDBFC009E05BE /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		C4067CE0212FDC04009E05BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4067CE1212FDC09009E05BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4067CE5212FDC5C009E05BE /* XCTakeOut.storyboard */,
+				C4556D932133FE7100616C22 /* XCTakeOutSearchTitleView.swift */,
+				C4556D952133FE7A00616C22 /* XCTakeOutSearchTitleView.xib */,
+				C4067CE7212FDE42009E05BE /* XCTakeOutShopSearchTitleView.swift */,
+				C4067CE9212FDE4A009E05BE /* XCTakeOutShopSearchTitleView.xib */,
+				C4562696213514BF00D1661D /* XCTakeOuteCell.swift */,
+				C4562697213514BF00D1661D /* XCTakeOuteCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4067CE2212FDC0D009E05BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C45626922134F97100D1661D /* XCTakeOutController.swift */,
+				C4067CE3212FDC4C009E05BE /* XCTakeOutShopController.swift */,
+				C4556D912133FB8F00616C22 /* XCTakeOutShopSearchController.swift */,
+				C4573E0C21366C7900426510 /* XCFixedHeaderController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C40CF5BE20BFDBA200F53AC3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +466,7 @@
 				C45FDADF20C6982C0078890C /* MBProgressHUDExt.swift */,
 				C40CF5D420BFDD4A00F53AC3 /* UILabelExt.swift */,
 				C463233D20CA8F8C000D4280 /* UITextFieldExt.swift */,
+				C4067CEB212FF771009E05BE /* UISearchBarExt.swift */,
 				C4B05A4120C7D2220013DF45 /* UIButtonExt.swift */,
 				C40CF5D220BFDD1100F53AC3 /* UIColorExt.swift */,
 				C45FDADD20C694C80078890C /* StringExt.swift */,
@@ -390,6 +475,7 @@
 				C460E47F20EF6265008DC4B5 /* CGFloatExt.swift */,
 				C4587C3020EB48B500BE3FE9 /* UIViewControllerExt.swift */,
 				C45B5955212BED7B00C1EDE7 /* UIWebViewExt.swift */,
+				C456269A213541C400D1661D /* UIViewExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -655,6 +741,7 @@
 			isa = PBXGroup;
 			children = (
 				C4576D8B20CFA65900B15D4C /* BaseModelProtocol.swift */,
+				C458A5AC21392473006658CC /* EmptyRequestType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -935,8 +1022,11 @@
 				C47BEC0E20E47B7C0025B3E3 /* CustomLabel.swift */,
 				C47BEC1120E47C660025B3E3 /* CustomButton.swift */,
 				C47BEC2220E4E76E0025B3E3 /* CustomTextField.swift */,
-				C460E47720EF1040008DC4B5 /* CustomView.swift */,
 				C44AE24C211984B900C0AE61 /* CustomTextView.swift */,
+				C460E47720EF1040008DC4B5 /* CustomView.swift */,
+				C458A5AE2139507C006658CC /* ButtonClassView.swift */,
+				C458A5B0213950C5006658CC /* PayPasswordView.swift */,
+				C458A5B2213950E9006658CC /* TableViewFixedHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1169,6 +1259,7 @@
 			isa = PBXGroup;
 			children = (
 				C45887DE21119D6900DF57EF /* Home */,
+				C4067CDE212FDBDF009E05BE /* TakeOut */,
 				C45EEE27211BD7B6004C2953 /* Slide */,
 				C45C5E33211A993A001F705C /* Circle */,
 				C45887E721119FA800DF57EF /* Remind */,
@@ -1331,6 +1422,7 @@
 			files = (
 				C4560D1420E5C71000113514 /* XCBalance.storyboard in Resources */,
 				C4BEB061211D9635004A1608 /* XCSlideFooterCell.xib in Resources */,
+				C4556D962133FE7A00616C22 /* XCTakeOutSearchTitleView.xib in Resources */,
 				C4144ADD20F5EC9100F7A115 /* XCIssueToolView.xib in Resources */,
 				C4583A5720BFF82500D29646 /* LaunchScreen.storyboard in Resources */,
 				C49748D620C1563800E25F76 /* XCPersonal.storyboard in Resources */,
@@ -1338,6 +1430,7 @@
 				C481839A20D26E8900CB335A /* XCInformation.storyboard in Resources */,
 				C45887E621119DC400DF57EF /* XCHome.storyboard in Resources */,
 				C4560D1D20E5DE3000113514 /* XCBankCard.storyboard in Resources */,
+				C4067CE6212FDC5C009E05BE /* XCTakeOut.storyboard in Resources */,
 				C45C5E3F211A9DF1001F705C /* XCCircleCell.xib in Resources */,
 				C460E47620EF0FB0008DC4B5 /* XCPay.storyboard in Resources */,
 				C4583A5420BFF82500D29646 /* Assets.xcassets in Resources */,
@@ -1348,6 +1441,7 @@
 				C4BEB04B211D5A46004A1608 /* XCSlide1Cell.xib in Resources */,
 				C45887EF2111A25C00DF57EF /* XCRemind.storyboard in Resources */,
 				C4BEB059211D681D004A1608 /* XCSlide1HeaderCell.xib in Resources */,
+				C4067CEA212FDE4A009E05BE /* XCTakeOutShopSearchTitleView.xib in Resources */,
 				C4487ED020D398C700605BD9 /* XCSetting.storyboard in Resources */,
 				C4144AD920F5E8BD00F7A115 /* XCIssuePhotoCell.xib in Resources */,
 				C4642B9720DCDB1C00D4D5EB /* Area.plist in Resources */,
@@ -1356,6 +1450,7 @@
 				C4583A5820BFF82500D29646 /* Main.storyboard in Resources */,
 				C426FEF920E37DB700B5A20D /* XCSettingAboutFooterView.xib in Resources */,
 				C4144AD520F5DB0000F7A115 /* XCIssue.storyboard in Resources */,
+				C4562699213514BF00D1661D /* XCTakeOuteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1407,6 +1502,7 @@
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -1429,6 +1525,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -1472,6 +1569,7 @@
 				C4560D1620E5D38C00113514 /* XCInformationAreaShowController.swift in Sources */,
 				C4487ECE20D38F9500605BD9 /* XCInformationQRCodeController.swift in Sources */,
 				C455F4A420F45A790047B527 /* SystemTool.swift in Sources */,
+				C4067CE4212FDC4C009E05BE /* XCTakeOutShopController.swift in Sources */,
 				C45FDADC20C6376F0078890C /* QRCodeTool.swift in Sources */,
 				C4785F9F20CE758B0096D203 /* XCSettingAccountManageCell.swift in Sources */,
 				C4560D3620E6275100113514 /* XCBillChartConsumeView.swift in Sources */,
@@ -1492,6 +1590,7 @@
 				C4AB3DBB20BFFACE006A60D5 /* AppConst.swift in Sources */,
 				C463233E20CA8F8C000D4280 /* UITextFieldExt.swift in Sources */,
 				C4BEB055211D64C6004A1608 /* XCSlide2Model.swift in Sources */,
+				C456269B213541C400D1661D /* UIViewExt.swift in Sources */,
 				C4B05A4020C7C9EA0013DF45 /* XCUserLoginController.swift in Sources */,
 				C4576D8C20CFA65900B15D4C /* BaseModelProtocol.swift in Sources */,
 				C45B5956212BED7B00C1EDE7 /* UIWebViewExt.swift in Sources */,
@@ -1499,6 +1598,7 @@
 				C4586B94211400A800C2CD3A /* XCRemind.xcdatamodeld in Sources */,
 				C4560D2E20E6257F00113514 /* XCBillController.swift in Sources */,
 				C49748C220C0E06300E25F76 /* AppRegister.swift in Sources */,
+				C458A5B1213950C5006658CC /* PayPasswordView.swift in Sources */,
 				C44AE24B21196FEE00C0AE61 /* CoreDataEntityNameEnum.swift in Sources */,
 				C4487ECA20D35B7C00605BD9 /* XCUserEditPasswordController.swift in Sources */,
 				C456107020D234BD00E0B1D4 /* InterfaceCtrl.swift in Sources */,
@@ -1513,6 +1613,7 @@
 				C426FEFB20E37DC700B5A20D /* XCSettingAboutFooterView.swift in Sources */,
 				C47BEC1D20E4CFC70025B3E3 /* XCBalanceController.swift in Sources */,
 				C4586B962114309700C2CD3A /* CoreDataTool.swift in Sources */,
+				C458A5AF2139507C006658CC /* ButtonClassView.swift in Sources */,
 				C481838820D2474800CB335A /* BaseHandler.swift in Sources */,
 				C4582A3E20D0F57600E3D15F /* XCUserHandler.swift in Sources */,
 				C45B5958212BF1AE00C1EDE7 /* BaseWebViewController.swift in Sources */,
@@ -1520,11 +1621,16 @@
 				C47BEC1B20E4BBC60025B3E3 /* XCInformationAreaController.swift in Sources */,
 				C4144AD820F5E8BD00F7A115 /* XCIssuePhotoCell.swift in Sources */,
 				C4583A5220BFF82500D29646 /* XCHelperTool_iOS.xcdatamodeld in Sources */,
+				C4562698213514BF00D1661D /* XCTakeOuteCell.swift in Sources */,
 				C47610F62105A0750097D575 /* XCChatUpWriteController.swift in Sources */,
 				C4560D2120E5DE9B00113514 /* XCBankCardAddController.swift in Sources */,
+				C4556D942133FE7100616C22 /* XCTakeOutSearchTitleView.swift in Sources */,
 				C47BEC0F20E47B7C0025B3E3 /* CustomLabel.swift in Sources */,
 				C4B05A4220C7D2220013DF45 /* UIButtonExt.swift in Sources */,
+				C4067CE8212FDE42009E05BE /* XCTakeOutShopSearchTitleView.swift in Sources */,
 				C45C5E3E211A9DF1001F705C /* XCCircleCell.swift in Sources */,
+				C458A5B3213950E9006658CC /* TableViewFixedHeaderView.swift in Sources */,
+				C4556D922133FB8F00616C22 /* XCTakeOutShopSearchController.swift in Sources */,
 				C4576D8920CFA60100B15D4C /* XCUserInfoModel.swift in Sources */,
 				C47BEC1F20E4D50C0025B3E3 /* XCBalanceRechargeController.swift in Sources */,
 				C462FDD020D3CA25006CCDC2 /* XCInformationCertificationController.swift in Sources */,
@@ -1535,6 +1641,7 @@
 				C4BEB058211D681D004A1608 /* XCSlide1HeaderCell.swift in Sources */,
 				C49748D220C155FA00E25F76 /* XCPersonalController.swift in Sources */,
 				C460E47E20EF4819008DC4B5 /* PayTool.swift in Sources */,
+				C45626932134F97100D1661D /* XCTakeOutController.swift in Sources */,
 				C481839820D26DB700CB335A /* XCInformationAvatarController.swift in Sources */,
 				C47C6B6A2111C59100A96A8F /* XCRemindType.swift in Sources */,
 				C47610F0210577150097D575 /* XCChatUpController.swift in Sources */,
@@ -1546,6 +1653,7 @@
 				C456106E20D233F700E0B1D4 /* URLParameter.swift in Sources */,
 				C4560D3020E6260900113514 /* XCBillChartController.swift in Sources */,
 				C47C6B6D2112A42100A96A8F /* XCRemindCell.swift in Sources */,
+				C4573E0D21366C7900426510 /* XCFixedHeaderController.swift in Sources */,
 				C4576D8620CF786900B15D4C /* XCUserCheckIDCardController.swift in Sources */,
 				C4144ADF20F5ECC000F7A115 /* XCIssueController.swift in Sources */,
 				C4785FA320CE846C0096D203 /* XCSettingResettingPasswordController.swift in Sources */,
@@ -1553,6 +1661,7 @@
 				C40CF5CE20BFDC9000F53AC3 /* ShareTool.swift in Sources */,
 				C4583A5520BFF82500D29646 /* AppDelegate.swift in Sources */,
 				C4785FA120CE76250096D203 /* XCSettingAccountManageController.swift in Sources */,
+				C458A5AD21392473006658CC /* EmptyRequestType.swift in Sources */,
 				C460E47C20EF3A99008DC4B5 /* XCPayInputPasswordController.swift in Sources */,
 				C45FDADE20C694C80078890C /* StringExt.swift in Sources */,
 				C4560D2320E5E39900113514 /* XCBankCardInfoCreditController.swift in Sources */,
@@ -1568,6 +1677,7 @@
 				C4587C3120EB48B500BE3FE9 /* UIViewControllerExt.swift in Sources */,
 				C4144ADB20F5EC8100F7A115 /* XCIssueToolView.swift in Sources */,
 				C460AC1B2122BCE4001AEF69 /* AppPathUrlTool.swift in Sources */,
+				C4067CEC212FF771009E05BE /* UISearchBarExt.swift in Sources */,
 				C463233A20CA383B000D4280 /* PublicEnum.swift in Sources */,
 				C481839C20D2784A00CB335A /* XCInformationHandler.swift in Sources */,
 				C40CF5E220BFE3B900F53AC3 /* XCThirdController.swift in Sources */,

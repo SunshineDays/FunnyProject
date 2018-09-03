@@ -48,38 +48,28 @@ class XCSlideController: BaseViewController {
     
     private lazy var headerTableView: UITableView = {
         let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: headerHeight))
-        tableView.register(UINib(nibName: tableViewCellType.headerCellName, bundle: nil), forCellReuseIdentifier: tableViewCellType.headerCellName)
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.isScrollEnabled = false
+        tableView.register(UINib(nibName: tableViewCellType.headerCellName, bundle: nil), forCellReuseIdentifier: tableViewCellType.headerCellName)
         return tableView
     }()
     
-    private lazy var headerScrollView: UIScrollView = {
-        let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: headerHeight))
-        scrollView.backgroundColor = UIColor.clear
-        scrollView.isScrollEnabled = false
-        scrollView.addSubview(headerTableView)
-        return scrollView
-    }()
-    
-    private lazy var tableHeaderView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: headerHeight))
-        view.backgroundColor = UIColor.clear
-        view.isUserInteractionEnabled = true
-        view.addSubview(headerScrollView)
+    private lazy var tableHeaderView: TableViewFixedHeaderView = {
+        let view = TableViewFixedHeaderView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: headerHeight))
+        view.contentView.addSubview(headerTableView)
         return view
     }()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: CGRect(x: 0, y: kNavigationHeight, width: kScreenWidth, height: kScreenHeight - kNavigationHeight))
-        tableView.register(UINib(nibName: tableViewCellType.cellName, bundle: nil), forCellReuseIdentifier: tableViewCellType.cellName)
-        tableView.register(UINib(nibName: tableViewCellType.footerCellName, bundle: nil), forCellReuseIdentifier: tableViewCellType.footerCellName)
         tableView.tableHeaderView = tableHeaderView
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: tableViewCellType.cellName, bundle: nil), forCellReuseIdentifier: tableViewCellType.cellName)
+        tableView.register(UINib(nibName: tableViewCellType.footerCellName, bundle: nil), forCellReuseIdentifier: tableViewCellType.footerCellName)
         view.addSubview(tableView)
         return tableView
     }()
@@ -92,7 +82,7 @@ class XCSlideController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        config(tableViewCellType: .slide1, tableViewModels: ["", ""], headerTableViewModels: ["", "", "", "", ""])
+        config(tableViewCellType: .slide1, tableViewModels: ["", "", "", "", "", "", ""], headerTableViewModels: ["", "", "", "", ""])
     }
 
     override func didReceiveMemoryWarning() {
@@ -144,11 +134,8 @@ extension XCSlideController: UITableViewDelegate, UITableViewDataSource {
             if indexPath.row != tableViewModels.count {
                 return tableViewCellType.cellRowHeight
             } else {
-                var height: CGFloat = 140
-                let spaceHeight = tableView.frame.height - CGFloat(tableViewModels.count) * tableViewCellType.cellRowHeight - 30 - height
-                if spaceHeight > 0 {
-                    height = height + spaceHeight
-                }
+                var height = tableView.frame.height - CGFloat(tableViewModels.count) * tableViewCellType.cellRowHeight - headerSectionView.frame.height
+                height = height >= 0 ? height : 0
                 return height
             }
         }
@@ -182,6 +169,11 @@ extension XCSlideController {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = scrollView.contentOffset.y
         print(y)
+        
+        if scrollView == self.tableView {
+            tableHeaderView.contentOffsetY = y
+        }
+        
         if y == 0 {
             headerSectionView.showButton.isSelected = true
         } else if y >= headerHeight {
@@ -189,36 +181,22 @@ extension XCSlideController {
         }
 
         isDown = y <= endContentOffsetY
-
         endContentOffsetY = y
-
-        if y == 375 {
-            tableView.setContentOffset(CGPoint(x: 0, y: headerHeight), animated: false)
-        }
-        
-        if scrollView == self.tableView {
-            if y > 0 && y <= headerHeight {
-                headerScrollView.contentOffset = CGPoint(x: headerScrollView.contentOffset.x, y: -(y / 1.0))
-            }
-            if y <= 0 {
-                headerScrollView.frame = CGRect(x: 0, y: y, width: kScreenWidth, height: headerHeight)
-            }
-        }
     }
     
     /// 结束拖动
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if isDown {
-            tableView.setContentOffset(.zero, animated: true)
-        } else {
-            if scrollView.contentOffset.y <= headerHeight {
-                tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
-            }
+        if !decelerate {
+            scrollViewDidEndScroll(scrollView)
         }
     }
     
     /// 开始减速
     func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        scrollViewDidEndScroll(scrollView)
+    }
+    
+    private func scrollViewDidEndScroll(_ scrollView: UIScrollView) {
         if isDown {
             tableView.setContentOffset(.zero, animated: true)
         } else {
@@ -227,4 +205,5 @@ extension XCSlideController {
             }
         }
     }
+    
 }

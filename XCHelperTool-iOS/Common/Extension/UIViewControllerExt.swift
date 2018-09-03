@@ -35,10 +35,10 @@ extension UIViewController {
     ///   - isHiddenShadowImage: 是否隐藏底部的线
     ///   - alpha: 透明度
     func wrSetNaviBar(backgroundColor: UIColor = BaseNavigationController.naviBarDefaultBackgroundColor,
-                      titleColor: UIColor = BaseNavigationController.naviBarDefaultTitleColor,
-                      tintColor: UIColor = BaseNavigationController.naviBarDefaultTintColor,
-                      isHiddenShadowImage: Bool = false,
-                      alpha: CGFloat? = 1.0)
+                           titleColor: UIColor = BaseNavigationController.naviBarDefaultTitleColor,
+                            tintColor: UIColor = BaseNavigationController.naviBarDefaultTintColor,
+                  isHiddenShadowImage: Bool = false,
+                                alpha: CGFloat? = 1.0)
     {
         wr_setNavBarBarTintColor(backgroundColor)
         wr_setNavBarTitleColor(titleColor)

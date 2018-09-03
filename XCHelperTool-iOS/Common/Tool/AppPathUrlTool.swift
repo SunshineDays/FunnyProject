@@ -11,7 +11,7 @@ import UIKit
 class AppPathUrlTool: NSObject {
     
     class func pushToViewController(url: URL) {
-        let path = ctrlPath(url: url)
+        let path = urlPath(url: url)
         switch path {
         case .home:             push(InterfaceCtrl.homePageController())
         case .chatup:           push(InterfaceCtrl.chatupController())
@@ -35,7 +35,8 @@ class AppPathUrlTool: NSObject {
         }
     }
     
-    private class func ctrlPath(url: URL) -> AppPathURLType {
+    /// 通过url判断类型
+    private class func urlPath(url: URL) -> AppPathURLType {
         var result = url.absoluteString
         result = result.replacingOccurrences(of: "sunshine://", with: "")
         let index = result.index(where: { $0 == "?" })

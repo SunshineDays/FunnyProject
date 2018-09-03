@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 extension UIWebView {
     var jsWidth: CGFloat {
@@ -20,4 +21,21 @@ extension UIWebView {
     }
 }
 
+extension WKWebView {
+    var jsWidth: CGFloat {
+        var width: CGFloat = 0
+        evaluateJavaScript("document.getElementById('content').offsetWidth", completionHandler: { (result, error) in
+            width = result as! CGFloat
+        })
+        return width
+    }
+    
+    var jsHeight: CGFloat {
+        var height: CGFloat = 0
+        evaluateJavaScript("document.getElementById('content').offsetHeight", completionHandler: { (result, error) in
+            height = result as! CGFloat
+        })
+        return height
+    }
+}
 

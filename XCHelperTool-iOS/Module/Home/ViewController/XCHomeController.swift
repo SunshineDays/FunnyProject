@@ -13,7 +13,6 @@ class XCHomeController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +37,18 @@ class XCHomeController: BaseTableViewController {
             print("----" + str)
         case (0, 3):
             let vc = BaseWebViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case (0, 4):
+            let vc = R.storyboard.xcTakeOut.xcTakeOutShopController()!
+            navigationController?.pushViewController(vc, animated: true)
+        case (0, 5):
+            let vc = R.storyboard.xcTakeOut.xcTakeOutController()!
+            navigationController?.pushViewController(vc, animated: true)
+        case (0, 6):
+            let vc = XCFixedHeaderController()
+            navigationController?.pushViewController(vc, animated: true)
+        case (0, 7):
+            let vc = XCThirdController()
             navigationController?.pushViewController(vc, animated: true)
         default:
             break

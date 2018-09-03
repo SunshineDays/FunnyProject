@@ -30,7 +30,7 @@ class XCBalanceRechargeController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        moneyTextField.placeholder("请输入充值金额")
+        moneyTextField.placeholder("请输入充值金额", font: 17)
         
     }
 

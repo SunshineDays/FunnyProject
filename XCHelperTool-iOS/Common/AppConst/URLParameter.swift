@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// 链接
+/// URL
 enum AppPathURLType: String {
     case userLogin = "user/login"
     case userLogout = "user/logout"

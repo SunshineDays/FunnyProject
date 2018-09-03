@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         window?.rootViewController = BaseTabBarController()
-//        BaseNavigationController.setNaviBarApperence()
 
         AppRegister.registerApp(application: application, launchOptions: launchOptions)
         

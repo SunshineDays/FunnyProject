@@ -33,7 +33,7 @@ class XCBalanceWithdrawController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        moneyTextField.placeholder("可转出到卡0.00元")
+        moneyTextField.placeholder("可转出到卡0.00元", font: 17)
     }
 
     override func didReceiveMemoryWarning() {

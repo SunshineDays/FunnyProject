@@ -9,10 +9,20 @@
 import UIKit
 
 extension UITextField {
-    /// 设置占位符的文字以及字体大小
-    public func placeholder(_ placeholder: String, font: CGFloat = 17) {
+    /// 占位符
+    ///
+    /// - Parameters:
+    ///   - placeholder: 占位字符串
+    ///   - color: 字体颜色
+    ///   - font: 字体大小
+    public func placeholder(_ placeholder: String, color: UIColor? = nil, font: CGFloat? = nil) {
         let placeholderString = NSMutableAttributedString(string: placeholder)
-        placeholderString.addAttribute(.font, value: UIFont.systemFont(ofSize: font), range: NSRange(location: 0, length: placeholder.count))
+        if let font = font {
+            placeholderString.addAttribute(.font, value: UIFont.systemFont(ofSize: font), range: NSRange(location: 0, length: placeholder.count))
+        }
+        if let color = color {
+            placeholderString.addAttribute(.foregroundColor, value: color, range: NSRange(location: 0, length: placeholder.count))
+        }
         attributedPlaceholder = placeholderString
     }
         

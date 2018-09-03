@@ -40,6 +40,7 @@ class BaseWebViewController: BaseViewController {
     }
 
     override func getData() {
+        progressView.setProgress(0.1, animated: true)
         if let url = URL(string: url) {
             webView.load(URLRequest(url: url))
         }
@@ -51,13 +52,14 @@ class BaseWebViewController: BaseViewController {
     deinit {
         webView.removeObserver(self, forKeyPath: "estimatedProgress")
     }
+    
 }
 
 extension BaseWebViewController {
     private func initView() {
+        
         navigationItem.leftBarButtonItems = nil
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: R.image.navigationbar_goback(), style: .plain, target: self, action: #selector(goBackAction))
-        progressView.setProgress(0.1, animated: true)
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         getData()
     }
@@ -74,11 +76,11 @@ extension BaseWebViewController {
 extension BaseWebViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
-        errorView(isShow: false)
+        isShowErrorView(false)
     }
 
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-        errorView(isShow: true)
+        isShowErrorView(!webView.canGoBack)
     }
     
 //    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {

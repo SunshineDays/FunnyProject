@@ -7,9 +7,10 @@ PODS:
   - FLAnimatedImage (1.0.12)
   - HMSegmentedControl (1.5.5)
   - IQKeyboardManagerSwift (6.1.1)
+  - JXCategoryView (1.0.3)
   - Kingfisher (4.8.1)
   - MBProgressHUD (1.1.0)
-  - MJRefresh (3.1.15.3)
+  - MJRefresh (3.1.15.6)
   - OpenShare (0.0.1)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -22,7 +23,7 @@ PODS:
   - SnapKit (4.0.0)
   - Spring (1.0.5)
   - SwiftyJSON (4.1.0)
-  - TZImagePickerController (2.2.5)
+  - TZImagePickerController (3.0.2)
   - WRNavigationBar (1.2.0)
   - YBImageBrowser (1.1.2):
     - FLAnimatedImage (~> 1.0.12)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - FLAnimatedImage
   - HMSegmentedControl
   - IQKeyboardManagerSwift
+  - JXCategoryView
   - Kingfisher
   - MBProgressHUD
   - MJRefresh
@@ -57,6 +59,7 @@ SPEC REPOS:
     - FLAnimatedImage
     - HMSegmentedControl
     - IQKeyboardManagerSwift
+    - JXCategoryView
     - Kingfisher
     - MBProgressHUD
     - MJRefresh
@@ -79,9 +82,10 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  JXCategoryView: ce8d714b75989e91dbf440fbad431908ea815c29
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
@@ -90,10 +94,10 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
-  TZImagePickerController: cf5c9f0ae343e2eb1912b26e4d9fa811b3159319
+  TZImagePickerController: c6736038f5016a8be14132fd07e4e92ce6496385
   WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
   YBImageBrowser: 3e61edabcb1927ddc095a96465f47fc551b8f9bf
 
-PODFILE CHECKSUM: 85e4f68c2a4a268ece6816e346694b388ba607c4
+PODFILE CHECKSUM: 2f009c6c9cfed828b2357b026ebdc3ca30b9bf9a
 
 COCOAPODS: 1.5.3

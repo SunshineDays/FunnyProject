@@ -11,50 +11,27 @@ import UIKit
 /// UITableViewController基类
 class BaseTableViewController: UITableViewController {
     
-    /// 请求是否失败
+    /// 请求是否成功
     private var isRequestSuccess = true
-    /// 空数据占位图片(tableView)
-    private var emptyImage = UIImage()
-    /// 空数据占位文字(tableView)
-    private var emptyTitle = NSAttributedString()
-    
     
     /// 子类调用(请求成功和失败都需要调用)
     ///
     /// - Parameters:
     ///   - tableView: UITableView
-    ///   - image: 占位图片
-    ///   - title: 占位文字
-    func tableView(forEmptyDataSet tableView: UITableView!,
-                            isRequestSuccess: Bool = true,
-                                       image: UIImage = UIColor.clear.colorToImage(),
-                                       title: String = " ")
-    {
-        emptyImage = image
-        emptyTitle = title.attributed(font: 16, color: UIColor.darkGray)
+    ///   - isRequestSuccess: 请求失败与否
+    public func tableView(forEmptyDataSet tableView: UITableView!, isRequestSuccess: Bool) {
         self.isRequestSuccess = isRequestSuccess
         /// 判断tableView里是否存在cell(数据是否为空)
         let isEmpty = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) == nil
-        if !isRequestSuccess && isEmpty {
-            emptyImage = UIColor.clear.colorToImage()
-            emptyTitle = PublicTool.attributedString(texts: ["加载失败\n\n", "点击重试"],
-                                                     fonts: [UIFont.systemFont(ofSize: 23), UIFont.systemFont(ofSize: 14)],
-                                                    colors: [UIColor.lightGray, UIColor(hex: 0x3B83F7)])
+        if isEmpty {
+            tableView.emptyDataSetDelegate = self
+            tableView.emptyDataSetSource = self
         }
-        if isRequestSuccess && isEmpty {
-            emptyImage = UIColor.clear.colorToImage()
-            emptyTitle = PublicTool.attributedString(texts: ["暂无数据"],
-                                                     fonts: [UIFont.systemFont(ofSize: 14)],
-                                                    colors: [UIColor.lightGray])
-        }
-        tableView.emptyDataSetDelegate = self
-        tableView.emptyDataSetSource = self
     }
     
     func getData() {
         fatalError("子类必须实现此方法")
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,16 +41,15 @@ class BaseTableViewController: UITableViewController {
 
 extension BaseTableViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
-        return emptyImage
+        return isRequestSuccess ? EmptyRequestType.noData.image : EmptyRequestType.error.image
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        return emptyTitle
+        return isRequestSuccess ? EmptyRequestType.noData.title : EmptyRequestType.error.title
     }
     
-    /// 设置是否可以滚动
     func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
-        return true
+        return true // 是否可以滚动
     }
     
     func emptyDataSet(_ scrollView: UIScrollView!, didTap view: UIView!) {
@@ -82,7 +58,7 @@ extension BaseTableViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegat
     
     func emptyDataSet(_ scrollView: UIScrollView!, didTap button: UIButton!) {
         if !isRequestSuccess { getData() }
-    }    
+    }
 }
 
 extension Array {

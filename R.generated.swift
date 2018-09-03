@@ -40,7 +40,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 74 images.
+  /// This `R.image` struct is generated, and contains static references to 83 images.
   struct image {
     /// Image ` ic_tabbar_home_default`.
     static let ic_tabbar_home_default = Rswift.ImageResource(bundle: R.hostingBundle, name: " ic_tabbar_home_default")
@@ -162,6 +162,24 @@ struct R: Rswift.Validatable {
     static let shortcut_message = Rswift.ImageResource(bundle: R.hostingBundle, name: "shortcut_message")
     /// Image `shortcut_write`.
     static let shortcut_write = Rswift.ImageResource(bundle: R.hostingBundle, name: "shortcut_write")
+    /// Image `takeout_back_gray`.
+    static let takeout_back_gray = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_back_gray")
+    /// Image `takeout_back_white`.
+    static let takeout_back_white = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_back_white")
+    /// Image `takeout_love_gray`.
+    static let takeout_love_gray = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_love_gray")
+    /// Image `takeout_love_white`.
+    static let takeout_love_white = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_love_white")
+    /// Image `takeout_love_yellow`.
+    static let takeout_love_yellow = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_love_yellow")
+    /// Image `takeout_more_gray`.
+    static let takeout_more_gray = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_more_gray")
+    /// Image `takeout_more_white`.
+    static let takeout_more_white = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_more_white")
+    /// Image `takeout_search_gray`.
+    static let takeout_search_gray = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_search_gray")
+    /// Image `takeout_search_white`.
+    static let takeout_search_white = Rswift.ImageResource(bundle: R.hostingBundle, name: "takeout_search_white")
     /// Image `tool_add`.
     static let tool_add = Rswift.ImageResource(bundle: R.hostingBundle, name: "tool_add")
     /// Image `tool_close`.
@@ -491,6 +509,51 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.shortcut_write, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "takeout_back_gray", bundle: ..., traitCollection: ...)`
+    static func takeout_back_gray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_back_gray, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_back_white", bundle: ..., traitCollection: ...)`
+    static func takeout_back_white(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_back_white, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_love_gray", bundle: ..., traitCollection: ...)`
+    static func takeout_love_gray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_love_gray, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_love_white", bundle: ..., traitCollection: ...)`
+    static func takeout_love_white(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_love_white, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_love_yellow", bundle: ..., traitCollection: ...)`
+    static func takeout_love_yellow(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_love_yellow, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_more_gray", bundle: ..., traitCollection: ...)`
+    static func takeout_more_gray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_more_gray, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_more_white", bundle: ..., traitCollection: ...)`
+    static func takeout_more_white(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_more_white, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_search_gray", bundle: ..., traitCollection: ...)`
+    static func takeout_search_gray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_search_gray, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "takeout_search_white", bundle: ..., traitCollection: ...)`
+    static func takeout_search_white(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.takeout_search_white, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "tool_add", bundle: ..., traitCollection: ...)`
     static func tool_add(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.tool_add, compatibleWith: traitCollection)
@@ -564,7 +627,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 10 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 13 nibs.
   struct nib {
     /// Nib `XCCircleCell`.
     static let xcCircleCell = _R.nib._XCCircleCell()
@@ -586,6 +649,12 @@ struct R: Rswift.Validatable {
     static let xcSlideFooterCell = _R.nib._XCSlideFooterCell()
     /// Nib `XCSlideHeaderSectionView`.
     static let xcSlideHeaderSectionView = _R.nib._XCSlideHeaderSectionView()
+    /// Nib `XCTakeOutSearchTitleView`.
+    static let xcTakeOutSearchTitleView = _R.nib._XCTakeOutSearchTitleView()
+    /// Nib `XCTakeOutShopSearchTitleView`.
+    static let xcTakeOutShopSearchTitleView = _R.nib._XCTakeOutShopSearchTitleView()
+    /// Nib `XCTakeOuteCell`.
+    static let xcTakeOuteCell = _R.nib._XCTakeOuteCell()
     
     /// `UINib(name: "XCCircleCell", in: bundle)`
     static func xcCircleCell(_: Void = ()) -> UIKit.UINib {
@@ -637,10 +706,25 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.xcSlideHeaderSectionView)
     }
     
+    /// `UINib(name: "XCTakeOutSearchTitleView", in: bundle)`
+    static func xcTakeOutSearchTitleView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.xcTakeOutSearchTitleView)
+    }
+    
+    /// `UINib(name: "XCTakeOutShopSearchTitleView", in: bundle)`
+    static func xcTakeOutShopSearchTitleView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.xcTakeOutShopSearchTitleView)
+    }
+    
+    /// `UINib(name: "XCTakeOuteCell", in: bundle)`
+    static func xcTakeOuteCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.xcTakeOuteCell)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 6 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 7 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `XCCircleCell`.
     static let xcCircleCell: Rswift.ReuseIdentifier<XCCircleCell> = Rswift.ReuseIdentifier(identifier: "XCCircleCell")
@@ -654,6 +738,8 @@ struct R: Rswift.Validatable {
     static let xcSlide1Cell: Rswift.ReuseIdentifier<XCSlide1Cell> = Rswift.ReuseIdentifier(identifier: "XCSlide1Cell")
     /// Reuse identifier `XCSlideFooterCell`.
     static let xcSlideFooterCell: Rswift.ReuseIdentifier<XCSlideFooterCell> = Rswift.ReuseIdentifier(identifier: "XCSlideFooterCell")
+    /// Reuse identifier `XCTakeOuteCell`.
+    static let xcTakeOuteCell: Rswift.ReuseIdentifier<XCTakeOuteCell> = Rswift.ReuseIdentifier(identifier: "XCTakeOuteCell")
     
     fileprivate init() {}
   }
@@ -663,7 +749,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 15 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 16 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
@@ -693,6 +779,8 @@ struct R: Rswift.Validatable {
     static let xcRemind = _R.storyboard.xcRemind()
     /// Storyboard `XCSetting`.
     static let xcSetting = _R.storyboard.xcSetting()
+    /// Storyboard `XCTakeOut`.
+    static let xcTakeOut = _R.storyboard.xcTakeOut()
     /// Storyboard `XCUser`.
     static let xcUser = _R.storyboard.xcUser()
     
@@ -766,6 +854,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.xcSetting)
     }
     
+    /// `UIStoryboard(name: "XCTakeOut", bundle: ...)`
+    static func xcTakeOut(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.xcTakeOut)
+    }
+    
     /// `UIStoryboard(name: "XCUser", bundle: ...)`
     static func xcUser(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.xcUser)
@@ -803,7 +896,9 @@ struct _R: Rswift.Validatable {
       try _XCCircleCell.validate()
       try _XCIssuePhotoCell.validate()
       try _XCSlideHeaderSectionView.validate()
+      try _XCTakeOutSearchTitleView.validate()
       try _XCRemindCell.validate()
+      try _XCTakeOutShopSearchTitleView.validate()
       try _XCIssueToolView.validate()
     }
     
@@ -958,6 +1053,61 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct _XCTakeOutSearchTitleView: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "XCTakeOutSearchTitleView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> XCTakeOutSearchTitleView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? XCTakeOutSearchTitleView
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "takeout_back_gray", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'takeout_back_gray' is used in nib 'XCTakeOutSearchTitleView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _XCTakeOutShopSearchTitleView: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "XCTakeOutShopSearchTitleView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> XCTakeOutShopSearchTitleView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? XCTakeOutShopSearchTitleView
+      }
+      
+      func secondView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[1] as? UIKit.UIView
+      }
+      
+      func thirdView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[2] as? UIKit.UIView
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "takeout_back_white", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'takeout_back_white' is used in nib 'XCTakeOutShopSearchTitleView', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "takeout_more_white", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'takeout_more_white' is used in nib 'XCTakeOutShopSearchTitleView', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "takeout_love_yellow", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'takeout_love_yellow' is used in nib 'XCTakeOutShopSearchTitleView', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "takeout_search_white", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'takeout_search_white' is used in nib 'XCTakeOutShopSearchTitleView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _XCTakeOuteCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = XCTakeOuteCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "XCTakeOuteCell"
+      let name = "XCTakeOuteCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> XCTakeOuteCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? XCTakeOuteCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -967,6 +1117,7 @@ struct _R: Rswift.Validatable {
       try xcHome.validate()
       try xcSetting.validate()
       try xcBankCard.validate()
+      try xcTakeOut.validate()
       try xcUser.validate()
       try xcIssue.validate()
       try xcBalance.validate()
@@ -1325,6 +1476,28 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.xcSetting().xcSettingPhoneShowController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xcSettingPhoneShowController' could not be loaded from storyboard 'XCSetting' as 'XCSettingPhoneShowController'.") }
         if _R.storyboard.xcSetting().xcSettingAboutController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xcSettingAboutController' could not be loaded from storyboard 'XCSetting' as 'XCSettingAboutController'.") }
         if _R.storyboard.xcSetting().xcSettingResettingPasswordController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xcSettingResettingPasswordController' could not be loaded from storyboard 'XCSetting' as 'XCSettingResettingPasswordController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct xcTakeOut: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "XCTakeOut"
+      let xcTakeOutController = StoryboardViewControllerResource<XCTakeOutController>(identifier: "XCTakeOutController")
+      let xcTakeOutShopController = StoryboardViewControllerResource<XCTakeOutShopController>(identifier: "XCTakeOutShopController")
+      
+      func xcTakeOutController(_: Void = ()) -> XCTakeOutController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xcTakeOutController)
+      }
+      
+      func xcTakeOutShopController(_: Void = ()) -> XCTakeOutShopController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xcTakeOutShopController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.xcTakeOut().xcTakeOutShopController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xcTakeOutShopController' could not be loaded from storyboard 'XCTakeOut' as 'XCTakeOutShopController'.") }
+        if _R.storyboard.xcTakeOut().xcTakeOutController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xcTakeOutController' could not be loaded from storyboard 'XCTakeOut' as 'XCTakeOutController'.") }
       }
       
       fileprivate init() {}

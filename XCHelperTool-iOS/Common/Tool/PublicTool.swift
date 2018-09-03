@@ -73,6 +73,31 @@ extension PublicTool {
     class func htmlString(html: String, color: String, font: Int) -> String {
         return String(format: "<span style=\"font-size:%dpx;color:%@\">%@</span>", font, color, html)
     }
+    
+    /// 设置html界面的格式
+    ///
+    /// - Parameters:
+    ///   - html: HTML字符串
+    /// - Returns: HTML字符串
+    class func htmlString(html: String) -> String {
+        return """
+        <!doctype html>
+        <html>
+        <head>
+        <meta charset='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'/>
+        <meta name='format-detection' content='telephone=no' />
+        <link href='web/label/labelContent.css' rel='stylesheet'/>
+        </head>
+        <body>
+        <article id='content'>
+        \(html)
+        </article>
+        </body>
+        </html>
+        """
+    }
+    
 }
 
 extension PublicTool {

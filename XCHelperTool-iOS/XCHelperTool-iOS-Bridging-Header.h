@@ -21,4 +21,4 @@
 @import HMSegmentedControl;
 @import TZImagePickerController;
 @import WRNavigationBar;
-//@import WRCustomNavigationBar;
+@import JXCategoryView;

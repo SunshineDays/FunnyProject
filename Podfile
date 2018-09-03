@@ -32,6 +32,7 @@ target ‘XCHelperTool-iOS’ do
     pod 'FLAnimatedImage'              #GIF加载动画
     pod 'TZImagePickerController'      #图片选择器
     pod 'WRNavigationBar'              #导航栏
+    pod 'JXCategoryView'               #滚动菜单（分段控制器）
     
     #    pod 'ActionSheetPicker-3.0'
 

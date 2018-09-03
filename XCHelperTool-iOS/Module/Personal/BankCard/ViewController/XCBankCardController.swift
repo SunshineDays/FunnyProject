@@ -15,8 +15,7 @@ class XCBankCardController: BaseTableViewController {
         super.viewDidLoad()
         wrSetNaviBar(backgroundColor: UIColor.black, titleColor: UIColor.white, tintColor: UIColor.white)
         tableView.backgroundColor = UIColor.white
-        tableView(forEmptyDataSet: tableView, image: #imageLiteral(resourceName: "share_logo"), title: "hahaha")
-        tableView(forEmptyDataSet: tableView, isRequestSuccess: false, image: #imageLiteral(resourceName: "tool_up"), title: "fsdfsfsdf")
+        tableView(forEmptyDataSet: tableView, isRequestSuccess: false)
         getData()
     }
 

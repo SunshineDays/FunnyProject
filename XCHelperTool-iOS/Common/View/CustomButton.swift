@@ -68,6 +68,15 @@ class AuthCodeButton: UIButton {
     
     private var timer: Timer?
     
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        setTitle("获取验证码", for: .normal)
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
     @objc private func updateTime() {
         codeTimeInterval -= 1
     }

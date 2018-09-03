@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         view.backgroundColor = UIColor.clear
         self.view.addSubview(view)
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-        titleLabel.attributedText = emptyTitle
+        titleLabel.attributedText = EmptyRequestType.error.title
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
         view.addSubview(titleLabel)
@@ -28,54 +28,28 @@ class BaseViewController: UIViewController {
         return view
     }()
     
-    /// 请求是否失败
+    /// 请求是否成功
     private var isRequestSuccess = true
-    /// 空数据占位图片(tableView)
-    private var emptyImage = UIImage()
-    /// 空数据占位文字(tableView)
-    private var emptyTitle = NSAttributedString()
     
     /// 子类调用(请求成功和失败都需要调用)
     ///
     /// - Parameters:
     ///   - tableView: UITableView
-    ///   - image: 占位图片
-    ///   - title: 占位文字
-    func tableView(forEmptyDataSet tableView: UITableView!,
-                            isRequestSuccess: Bool = true,
-                                       image: UIImage = UIColor.clear.colorToImage(),
-                                       title: String = " ")
-    {
-        emptyImage = image
-        emptyTitle = title.attributed(font: 16, color: UIColor.darkGray)
+    ///   - isRequestSuccess: 请求失败与否
+    public func tableView(forEmptyDataSet tableView: UITableView!, isRequestSuccess: Bool) {
         self.isRequestSuccess = isRequestSuccess
         /// 判断tableView里是否存在cell(数据是否为空)
         let isEmpty = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) == nil
-        if !isRequestSuccess && isEmpty {
-            emptyImage = UIColor.clear.colorToImage()
-            emptyTitle = PublicTool.attributedString(texts: ["加载失败\n\n", "点击重试"],
-                                                     fonts: [UIFont.systemFont(ofSize: 23), UIFont.systemFont(ofSize: 14)],
-                                                    colors: [UIColor.lightGray, UIColor(hex: 0x3B83F7)])
+        if isEmpty {
+            tableView.emptyDataSetDelegate = self
+            tableView.emptyDataSetSource = self
         }
-        if isRequestSuccess && isEmpty {
-            emptyImage = UIColor.clear.colorToImage()
-            emptyTitle = PublicTool.attributedString(texts: ["暂无数据"],
-                                                     fonts: [UIFont.systemFont(ofSize: 14)],
-                                                    colors: [UIColor.lightGray])
-        }
-        tableView.emptyDataSetDelegate = self
-        tableView.emptyDataSetSource = self
     }
     
-    /// 网络错误
+    /// 网络错误(没有使用tabelView时调用)
     ///
     /// - Parameter isShow: 是否显示网络错误view
-    func errorView(isShow: Bool = false) {
-        if isShow {
-            emptyTitle = PublicTool.attributedString(texts: ["加载失败\n\n", "点击重试"],
-                                                     fonts: [UIFont.systemFont(ofSize: 23), UIFont.systemFont(ofSize: 14)],
-                                                    colors: [UIColor.lightGray, UIColor(hex: 0x3B83F7)])
-        }
+    public func isShowErrorView(_ isShow: Bool) {
         errorView.isHidden = !isShow
     }
     
@@ -100,16 +74,15 @@ class BaseViewController: UIViewController {
 
 extension BaseViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
-        return emptyImage
+        return isRequestSuccess ? EmptyRequestType.noData.image : EmptyRequestType.error.image
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        return emptyTitle
+        return isRequestSuccess ? EmptyRequestType.noData.title : EmptyRequestType.error.title
     }
     
-    /// 设置是否可以滚动
     func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
-        return true
+        return true // 是否可以滚动
     }
     
     func emptyDataSet(_ scrollView: UIScrollView!, didTap view: UIView!) {
